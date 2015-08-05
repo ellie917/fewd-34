@@ -1,4 +1,16 @@
 </--
+day 2 on working on this
+1. build layout
+2. replace img
+3. descendent selectors
+
+order of commands caused img to be off - why - image will go under the first available space
+how do i center my text?
+how do i get
+how to get vertically centered - fonts have a certain height (line height); paragraph wraps at certain place..
+ ... but doesnt make sense to add 57px?
+tool to adjust?
+
 1. Add the header, main, and footer
 2. Add name, and an image placeholder
 placehold.it/350x150
@@ -18,33 +30,46 @@ img src = "http://placehold.it/200x200"
     <meta charset="utf-8">
     <title>Liz's Course Page</title>
     <style>
+      body{
+        font-family: arial;
+      }
+
       header {
-         background-color: blue;
-        position: relative;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow:auto;
       }
-      img {
-        position: absolute;
-        top: 0;
-        right:0;
-      }
-      h1 {
-        line-height: 200px;
+
+      main {
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-color: gray;
+        border-width: 1px;
       }
 
       footer {
-        text-align: center
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
       }
 
+      img {
+          border-radius: 100px;
+          float: right;
+      }
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>
-        Liz Lee
-      </h1>
-
-    <img src="http://placehold.it/200x200" alt="Placeholder">
+      <header>
+        <img src="http://placehold.it/200x200" alt="Placeholder">
+        <h1>
+          Liz Lee
+        </h1>
     </header>
 
     <main>
@@ -63,13 +88,11 @@ img src = "http://placehold.it/200x200"
           </a>
           </li>
         </ul>
-
     </main>
 
     <footer>
       <p>
-        Simone, LLC
-        Oh la la la.
+        SF | 2015
       </p>
     </footer>
 
