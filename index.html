@@ -11,6 +11,8 @@ how to get vertically centered - fonts have a certain height (line height); para
  ... but doesnt make sense to add 57px?
 tool to adjust?
 
+top margin aint workin
+
 1. Add the header, main, and footer
 2. Add name, and an image placeholder
 placehold.it/350x150
@@ -34,17 +36,20 @@ img src = "http://placehold.it/200x200"
         font-family: arial;
       }
 
-      header {
-        width: 600px;
+      header,
+      main,
+      footer {
         margin-left: auto;
         margin-right: auto;
+      }
+
+      header {
+        width: 600px;
         overflow:auto;
       }
 
       main {
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
+        width: 599px;
         border-style: solid;
         border-color: gray;
         border-width: 1px;
@@ -52,8 +57,6 @@ img src = "http://placehold.it/200x200"
 
       footer {
         width: 600px;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
       }
 
@@ -61,6 +64,7 @@ img src = "http://placehold.it/200x200"
           border-radius: 100px;
           float: right;
       }
+            
     </style>
   </head>
 
