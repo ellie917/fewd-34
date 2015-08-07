@@ -1,7 +1,11 @@
 </--
+q for self
 -product & signup will ev be links
-
 -what was the text wrapper again?
+-sf of putting margin right / margin left in header?
+-too adv - change link colors later
+background-image: url("http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png")
+
 ---->
 
 
@@ -13,29 +17,63 @@
     <title> ACME Corp - Home </title>
     <style>
       body {
-        font-family: sans-serif
+        font-family: sans-serif;
+        background-image: url("http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png");
       }
 
       header {
-        background-color: grey;
-        color: white
+        background-color: #C0C0C0;
+        height: 82px;
+        overflow: auto;
       }
 
       img {
-
+        float: left;
+        width: 300px;
       }
 
-      h1 {
+      li {
+        color: white;
+        display:inline;
+      }
+
+      .products {
+        width: 200px;
+        top: 15px;
+        float: right;
         position: relative;
-        line-height: auto;
+      }
+
+      .button {
+        float: right;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        background-color: blue;
+        border-radius: 5px;
       }
 
       main {
-        margin-left: auto; margin-right: auto; width: 60%;
-        background-image: url("http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png")
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-style:solid;
+        border-color: grey;
+        border-width: 1px;
+        border-radius: 10px;
+        margin-top: 30px;
+        background-color: white;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        box-shdaow: 0 0 1em grey;
       }
 
       footer {
+        margin-top: 40px;
         text-align: center;
         font-size: small
       }
@@ -46,9 +84,12 @@
   <body>
     <header>
       <img src="http://f.cl.ly/items/05361u3R0D3i1c2y2203/acme-corp.jpg">
-      <p> Products </p>
-      <p> Sign-up </p>
-
+      <nav>
+        <ul>
+          <li class ="products"> Products </li>
+          <li class ="button"> Sign Up </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
