@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ACME Corp - Home</title>
+    <style>
+      body {
+        background-image: url("http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png");
+        font-family: sans-serif;
+        margin: 0;
+      }
+      header {
+        background-color: rgb(196,196,196);
+        padding: 10px;
+        box-shadow: 0px 3px 10px gray;
+      }
+      img {
+        height: 75px;
+      }
+      ul {
+        float: right;
+        margin: 32px;
+        text-shadow: 0 0.5px 0.5px;
+      }
+      li {
+        display: inline;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+      }
+      li:nth-child(2) {
+        background-color: rgb(52,76,179);
+        padding: 10px 20px 10px 20px;
+        box-shadow: 0 2px 0.5px gray;
+      }
+      @media (max-width: 500px){
+        ul {
+          display: block;
+          background-color: red;
+        }
+        li {
+          display: block;
+        }
+      }
+      main {
+        background-color: white;
+        border-style: solid;
+        border-color: lightgrey;
+        border-width: thin;
+        border-radius: 10px;
+        padding: 10px 30px 10px 30px;
+        box-shadow: 0px -1px 7px gray;
+        margin: 40px auto;
+        max-width: 600px;
+      }
+      footer {
+        text-align: center;
+        margin-bottom: 75px;
+        font-size: small;
+        color: lightgray;
+        text-shadow: 0 1.5px 1px white;
+      }
+
+      hr {
+        width: 675px;
+        box-shadow: 0 1px 0 white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="http://f.cl.ly/items/05361u3R0D3i1c2y2203/acme-corp.jpg" alt="" />
+      <ul>
+        <li class="products">Products</li>
+        <li class="signup">Sign Up</li>
+      </ul>
+    </header>
+
+    <main>
+    <h1>Welcome to ACME Corp!</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    </main>
+
+    <hr>
+    <footer>Copyright, 2015</footer>
+    </hr>
+  </body>
+</html>

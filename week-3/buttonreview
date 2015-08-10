@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="#" class="button">Click here!</a>
+    <button class="button">Click here!</button>
+
+    .button{
+      font-size:15px;
+      padding:5px;
+      border: 1px solid black;
+    }
+  </body>
+</html>
