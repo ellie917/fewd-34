@@ -1,0 +1,152 @@
+
+body {
+  background-image: url("http://f.cl.ly/items/3C0W1n1t1s0P1Z0w131r/background.png");
+  font-family: sans-serif;
+  margin: 0;
+}
+header {
+  background-color: rgb(196,196,196);
+  padding: 10px;
+  box-shadow: 0px 3px 10px gray;
+}
+img {
+  height: 75px;
+}
+ul {
+  float: right;
+  margin: 32px;
+  text-shadow: 0 0.5px 0.5px black;
+}
+li {
+  display: inline;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+li:nth-child(3) {
+  background-color: rgb(52,76,179);
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0 2px 0.5px gray;
+}
+@media (max-width: 750px){
+  ul {
+    display: block;
+    background-color: red;
+  }
+  li {
+    display: block;
+  }
+}
+main {
+  background-color: white;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: thin;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 0px -1px 7px gray;
+  margin: 40px auto;
+  max-width: 600px;
+}
+footer {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: small;
+  color: lightgray;
+  text-shadow: 0 1.5px 1px white;
+}
+
+hr {
+  width: 675px;
+  box-shadow: 0 1px 0 white;
+}
+
+/* Products page */
+
+  .container {
+    display: relative;
+    margin-bottom: 20px;
+  }
+  .blasting, .hair, .unicycle{
+    display: flex;
+  }
+  .container img {
+    min-width: 250px;
+    height: 200px;
+  }
+  .container p {
+    margin: 0;
+  }
+
+  .container div {
+    padding: 0px 15px;
+  }
+
+  .container button {
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: blue;
+    font-size: medium;
+    background-color: white;
+    color:blue;}
+
+/* Scrap - failed attempts at selection*/
+
+  button:nth-of-type(2)
+    background-color: blue;
+  }
+
+  button: nth-child(2) {
+background-color: blue;
+}
+
+.container.why {
+  background-color: blue;
+}
+
+.hair: nth-child(3) {
+  background-color: blue;
+}
+
+
+  .howhear {
+  margin: 0;
+}
+
+
+/*Sign up page*/
+
+label {
+  position: absolute;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+  border-radius: 5px;
+  margin-right: 70px;
+  width: 300px;
+  height: 30px;
+  border-style: solid;
+  border-width:thin;
+  border-color: red;
+  position: relative;
+  float: right;
+}
+
+.firstname, .lastname, .email, .password {
+  position: relative;
+}
+
+div {
+  overflow: auto;
+}
+
+
+
+input[type="checkbox"], input[type="submit"]{
+margin-top: 30px;
+}
+
+.signupcat {
+  margin-bottom: 20px;
+}
