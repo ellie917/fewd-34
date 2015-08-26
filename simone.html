@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dearest Simone</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #60C8A0;
+    }
+  </style>
+  </head>
+
+  <body>
+  <div class="Welcome">
+    <h1>Italian Korean Remix </h1>
+
+  </div>
+
+  <script>
+    var name = prompt ("Ciao! What's your name?");
+    alert ("Ah, " +name+ "....what a beautiful nome. Nice to meet you!");
+    var namegf = prompt ("And what's the name of your girlfriend?");
+    alert ("Well, " + namegf+ " says she loves you!")
+  </script>
+
+
+  <p>
+    <button onclick="addImage()">+ See Photo</button>
+  </p>
+
+  <script>
+  function addImage(){
+    var pic = document.createElement('img');
+    pic.setAttribute("width",300px);
+    pic.setAttribute("height",300px);
+    pic.setAttribute("src","images/thathair.jpg");
+    var container = document.querySelector (".Welcome");
+    container.appendChild(pic);
+  }
+  </script>
+
+  <section>Epic Fail
+    <ul>
+      <li>I couldn't add a password to password protect the site</li>
+      <li>I couldn't make the text change based on your favorite color</li>
+      <li>I couldn't make our / the names appear</li>
+      <li>I don't understand why the epic fail list comes after</li>
+
+    </ul>
+</section>
+
+
+  </body>
+
+
+
+</html>
