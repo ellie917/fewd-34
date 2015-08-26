@@ -113,11 +113,12 @@ body { font-family: sans-serif; }
   <script>
   function makeBold() {
     var text = document.querySelector("#make-me-bold");
-    text.setAttribute("font-weight","bold");
-    p.appendChild(text);
-    document.set.nth-child(3).appendChild(p);
-    document.getElementbyID("make-me-bold").style.color = "red";
+    text.setAttribute("class","bold");
+  }
 
+    //text.className = "bold" is same as settingAttribute 
+
+    // change class name - scan classes & change .bold
     // When the button is clicked:                                --> already wired up on line 84
     //  1. assign element with selector "#make-me-bold" to a var
     //  2. set the element's class attribute to "bold"
@@ -125,7 +126,19 @@ body { font-family: sans-serif; }
     //  2. add the class "bold" using the element's classList
     //why doesn't font-weight, bold work when setting attribute?
     //
-  }
+
+    /*
+    text.setAttribute("font-weight","bold");
+
+    document.getElementById("#make-me-bold").className = ".bold";
+
+    p.appendChild(text);
+    document.set.nth-child(3).appendChild(p);
+    document.getElementbyID("make-me-bold").style.color = "red";
+
+    document.getElementbyID("make-me-bold");
+    */
+
   </script>
 </div>
 </body></html>

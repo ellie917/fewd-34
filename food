@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liz - Eat the World</title>
+    <style media="screen">
+      footer {
+        font-size: small;
+        color: grey;
+      }
+      div {
+        border: 1px solid grey;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I'm not going to give up on San Francisco food just yet...</br>
+      In search for good, appropriately-priced, FLAVORFUL food. </br>
+      Eating the world, one dish at a time. </br>
+      And dealing with my love/hate relationship with CSS. Naturally ungifted. CSS, links, and imgs to come. </br>
+    </p>
+
+    <div class="newfood">
+      <p>Where I Want to Eat</p>
+      <ul>
+        <li>dungeness crab @ ppq dungeness island - from amy</li>
+        <li>canto @ R&G Lounge - from justin</li>
+        <li>mission chinese (just to shut people up / have my own opinion) - from ed</li>
+
+      </ul>
+    </div>
+
+    <div class="oldfood">
+      <p>Where I've Eaten</p>
+      <p>Good, but not enough to return</p>
+      <ul>
+        <li>Sweet Maple for brunch - blackstone - w/ the girls</li>
+        <li>Delfina for dinner - tripe, fried gnocchi that really wasn't gnocchi, spaghetti - w/ boyfriend</li>
+      </ul>
+    </div>
+
+    <div class="bestburrito">
+    <p>What's the best burrito in San Francisco?</p>
+    <ol>
+      <li>
+      </li>
+    </ol>
+
+    <p>Still Need to Try</p>
+    <ul>
+      <li>
+      </li>
+    </ul>
+  </div>
+
+    <div class="overrated">Overrated
+    <p></p>
+    <ol>
+      <li>
+      </li>
+    </ol>
+    </div>
+
+  </body>
+
+  <footer>
+  Dedicated to Simone, Tom, Mom, my Brazilian mami, and everyone else who has cooked a meal for me.
+  And the US financial system that allowed me to have a credit card to max out at 16 to eat in Manhattan, before BK became a thing and "hipsters" emerged from the Midwest.
+  </footer>
+
+</html>
