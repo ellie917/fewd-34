@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Triangles</title>
+    <title>Triangles Galore</title>
     <style>
     body {
       max-width: 800px;
@@ -46,8 +46,11 @@
       margin: 10px;
     }
     h1,
+    h5,
     h6 {
-      margin: 10px;
+      margin-left: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     .triangletype {
       margin: auto;
@@ -89,15 +92,15 @@
       border-bottom: 100px solid red;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      margin-top: 50px;
       margin-left: 40px;
+      margin-top: 50px;
     }
     .largerighttriangle {
       width: 0;
       height: 0;
       border-bottom: 100px solid red;
       border-right: 50px solid transparent;
-      margin-top: 40px;
+      margin-top: 50px;
       margin-left: 60px;
     }
     .largeequilateraltriangle {
@@ -106,7 +109,7 @@
       border-bottom: 104px solid red;
       border-left: 60px solid transparent;
       border-right: 60px solid transparent;
-      margin-top: 40px;
+      margin-top: 50px;
       margin-left: 60px;
       }
     div.arrowdown{
@@ -121,7 +124,7 @@
       height: 0;
       border-left: 40px solid blue;
       border-top: 40px solid transparent;
-      border-bottom: 60px solid transparent;
+      border-bottom: 40px solid transparent;
     }
     div.arrowleft{
       width: 0;
@@ -166,7 +169,8 @@
   <body>
     <section>
       <p class ="sectionheader">Triangles Galore</p>
-      <h6>So not fancy..but will do the job</h6>
+      <h5>So not fancy..but will do the job</h5></br>
+      <h6>...but if you have suggestions on how to clean-up positioning / CSS, let me know - had to throw together quickly before class.</h6>
       <div class="arrowup"></div>
       <div class="arrowdown"></div>
       <div class="arrowright"></div>
