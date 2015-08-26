@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Triangles</title>
+    <style>
+    body {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .arrowup,
+    .arrowdown,
+    .arrowleft,
+    .arrowright,
+    .righttriangle,
+    .equilateraltriangle {
+      float: left;
+      margin: 20px;
+    }
+    section,
+    .typecontainer,
+    .democontainer {
+      border: 2px solid grey;
+      margin: 10px;
+    }
+    section {
+      overflow: auto;
+    }
+    .democontainer{
+      overflow: auto;
+      height: 325px;
+    }
+
+    .typecontainer {
+      position: relative;
+      overflow: auto;
+    }
+    div.final_triangles {
+      border: 10px solid black;
+      margin: 10px;
+    }
+    div.border {
+      border: 10px solid black;
+      margin: 10px;
+    }
+    h1,
+    h6 {
+      margin: 10px;
+    }
+    .triangletype {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      text-align: center;
+    }
+    .triangletype:nth-child(3){
+      background-color: white;
+    }
+    .demobox {
+      width: 150px;
+      height: 150px;
+      background-color: lightgray;
+      border-left: 40px solid blue;
+      border-right: 40px solid green;
+      border-bottom: 40px solid red;
+      border-top: 40px solid yellow;
+      margin: 10px;
+      position: absolute;
+    }
+    .demobox-explanation {
+      float: right;
+      margin-left: 250px;
+      font-weight: lighter;
+      font-style: italic;
+      margin-right: 5px;
+    }
+    div.arrowup{
+      width: 0;
+      height: 0;
+      border-bottom: 40px solid red;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+    }
+    .largeacutetriangle {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      margin-top: 50px;
+      margin-left: 40px;
+    }
+    .largerighttriangle {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-right: 50px solid transparent;
+      margin-top: 40px;
+      margin-left: 60px;
+    }
+    .largeequilateraltriangle {
+      width: 0;
+      height: 0;
+      border-bottom: 104px solid red;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      margin-top: 40px;
+      margin-left: 60px;
+      }
+    div.arrowdown{
+      width: 0;
+      height: 0;
+      border-top: 40px solid yellow;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+    }
+    div.arrowright{
+      width: 0;
+      height: 0;
+      border-left: 40px solid blue;
+      border-top: 40px solid transparent;
+      border-bottom: 60px solid transparent;
+    }
+    div.arrowleft{
+      width: 0;
+      height: 0;
+      border-right: 40px solid green;
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent;
+    }
+    div.righttriangle{
+      width: 0;
+      height: 0;
+      border-bottom: 40px solid red;
+      border-right: 40px solid transparent;
+    }
+    div.equilateraltriangle{
+      width: 0;
+      height: 0;
+      border-bottom: 52px solid red;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+    }
+    div.triangletype{
+      width: 200px;
+      height: 250px;
+      position: relative;
+      float: left;
+    }
+    .sectionheader {
+      font-size: x-large;
+      font-weight: bold;
+      margin:10px;
+    }
+    li {
+      margin: 3px;
+    }
+    a {
+      color: black;
+    }
+  </style>
+
+  </head>
+  <body>
+    <section>
+      <p class ="sectionheader">Triangles Galore</p>
+      <h6>So not fancy..but will do the job</h6>
+      <div class="arrowup"></div>
+      <div class="arrowdown"></div>
+      <div class="arrowright"></div>
+      <div class="arrowleft"></div>
+      <div class="righttriangle"></div>
+      <div class="equilateraltriangle"></div>
+      <div class="youtubeplaybutton"></div>
+    </section>
+
+    <div class="democontainer">
+    <p class="sectionheader">Deconstructed Triangle</p>
+    <span class="demobox"></span>
+    <span class="demobox-explanation">
+    <ol>
+      <li>Take a box...with equally sized borders</li>
+      <li>...and shrink it to 0 height and width...</li>
+      <li>To create a triangle, focus on the border opposite from the triangle's main vertex (the direction you want the triangle to be pointing)...and set attributes you want (color, size, etc.)</li>
+      <li>The larger the border size, the larger the triangle</li>
+      <li>Make the adjacent borders transparent</li>
+    </ol>
+  </span>
+  </div>
+
+  <div class="typecontainer">
+    <p class="sectionheader">Triangle Types</p>
+    <div class="triangletype">Acute Isosceles Triangle
+    <div class="largeacutetriangle"></div>
+    </div>
+
+    <div class="triangletype">Right Triangle
+    <p>Eliminate margin-top or margin-bottom</p>
+    <div class="largerighttriangle"></div>
+    </div>
+
+    <div class="triangletype">Equilateral Triangle
+    <p> main border of focus = 86.6% * (adjacent border + adjacent boarder)
+    </p>
+    <div class="largeequilateraltriangle"></div>
+    </div>
+  </div>
+
+  <section>
+    <p class="sectionheader">Resources</p>
+    <ul>
+      <li><a href="http://davidwalsh.name/css-triangles">http://davidwalsh.name/css-triangles</a>
+      </li>
+    </ul>
+  </section>
+
+
+  </body>
+</html>
