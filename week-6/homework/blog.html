@@ -105,62 +105,67 @@
 
     <script>
 
-      function addlike () {
+      function addlike (something) {
+        event.preventDefault();
         var count = document.querySelector(".like-count");
         var newCountInt = parseInt(count.textContent) + 1;
         count.textContent = newCountInt;
       }
 
-      var likebutton = document.querySelector ("a");
-      likebutton.addEventListener("click",addlike)
+      var likebutton = document.querySelector (".like-link");
+      likebutton.addEventListener("click",addlike);
 
-      //var countInt = parseInt(count);
 
-      //count.setAttribute("value", 1);
-      //count.value = 1; same thing as above
-      //var newCountInt = countInt.value + 1;
 
-      //var countInt = parseInt(count);
-      //var newCountInt = countInt.value + 1;
+      // code scrap
+        // cleaner code - document.querySelect(".like-count").textContent;
+        //var countInt = parseInt(count);
 
-      // 1.    upon clicking the button,
-      // 1.1.1 queryselect button, add event listener to button
-      // 1.1.2 test with ghettto alert
-      //function test () {
-      //  alert ("Lord have mercy!");
-      //};
-      // 2.    change the number to +1
-      // 2.1   select .like-count element in span
-      // 3.    parseInt
-      // 4.    insert back into .like-count span (change number inside = TEXTCONTENT!)
-      // 4.1   do I need to create a new element in order to replace what's in .likecount span?
-              // create an array / use ::before
-              // Append is changing position...
-      // 5.    get the new number to appear...
-      // add loop?
+        //count.setAttribute("value", 1);
+        //count.value = 1; same thing as above
+        //var newCountInt = countInt.value + 1;
+
+        //var countInt = parseInt(count);
+        //var newCountInt = countInt.value + 1;
+
+      //psuedo code
+        // 1.    upon clicking the button,
+        // 1.1.1 queryselect button, add event listener to button
+        // 1.1.2 test with ghetto alert
+        // 2.    change the number to +1
+        // 2.1   select .like-count element in span
+        // 3.    parseInt
+        // 4.    insert back into .like-count span (change number inside = TEXTCONTENT!)
+        // 4.1   do I need to create a new element in order to replace what's in .likecount span?
+                // create an array / use ::before
+                // Append is changing position...
+        // 5.    get the new number to appear...
 
       function addcomment () {
+        event.preventDefault()
         var textarea = document.querySelector("#new-comment-body");
         var newcomment = textarea.value;
-        document.createElement("div").textContent = newcomment;
+        var newform = document.createElement("p");
+        newform.textContent = newcomment;
+        newform.setAttribute("class","comment");
+        var parent = document.querySelector("#comments");
+        parent.appendChild(newform);
+        }
+
+        var commentbutton = document.querySelector ("button");
+        commentbutton.addEventListener("click",addcomment);
 
         // constant ERROR - div.setAttribute("class","comment");
-        // error - comments.appendChild(div);
+        // error - comments.appendChild(div); but I think I need to add to the formid instead
         // event.preventDefault();
 
         // not working -
         // div.setAttribute ("class",comment);
         // var comment = div.className;
         // text.setAttribute("class","bold");
-        }
-        //is the parent form_id or div_id?
-
-      var commentbutton = document.querySelector ("button");
-      commentbutton.addEventListener("click",addcomment)
 
       //var buttonplaceholder = document.querySelector (".submit");
 
-//bauer sdk mayner ops firewall whiteboarding tmc git
       // 1. when button gets submitted
       // 2. take value in textarea
       // 3. set to textcontent of new div
