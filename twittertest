@@ -29,8 +29,6 @@
 
 <!-- not sure if i understand why I have to use head for getElementbyTagName  -->
 
-
-
       <form id = "twitter-report-form">
         <input type="text" name="name" placeholder = "Tweet URL">
         <!--double chekc what name is -->
