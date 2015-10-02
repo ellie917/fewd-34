@@ -2,14 +2,122 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Liz's Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <style type="text/css">
+            body {
+              background-color: beige;
+              /*background-image: url(cityimage.jpg);
+              background-size: cover;*/
+
+            }
+            main {
+              padding-left: 20px;
+            }
+
+            div {
+              text-align: center;
+            }
+
+            p.instruction {
+              font-size: 20px;
+              font-color: grey;
+            }
+
+            a.bookmarklet {
+              color: red;
+              font-weight: bold;
+              font-size: 18px;
+              position: center;
+              color: black;
+              margin: 0px 350px 0px 350px;
+              text-decoration: none;
+              text-align: center;
+              border-radius: 5%;
+              padding: 15px;
+              background-color: #66CDAA;
+              text-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+              box-shadow: 0px 2px 6px rgba(0,0,0,0.4)
+            }
+
+            footer {
+              font-size: 12px;
+              font-weight: lighter;
+              padding-top: 120px;
+              padding-left: 20px;
+            }
+
+            #text:after
+            {
+                content: "";
+                display: inline-block;
+                height: 1em;
+                width: 3px;
+                background-color: #333333;
+                margin-left: 2px;
+                font-weight: normal;
+                position: relative;
+                top: 4px;
+                -webkit-animation: blinker steps(1) 1s infinite;
+                -o-animation: blinker steps(1) 1s infinite;
+                -moz-animation: blinker steps(1) 1s infinite;
+                animation: blinker steps(1) 0s infinite;
+            }
+
+            @-webkit-keyframes blinker {
+                0% { visibility: visible; }
+                50% { visibility: hidden; }
+                100% { visibility: visible; }
+            }
+
+            @-moz-keyframes blinker {
+                0% { visibility: visible; }
+                50% { visibility: hidden; }
+                100% { visibility: visible; }
+            }
+
+            @-o-keyframes blinker {
+                0% { visibility: visible; }
+                50% { visibility: hidden; }
+                100% { visibility: visible; }
+            }
+
+            @keyframes blinker {
+                0% { visibility: visible; }
+                50% { visibility: hidden; }
+                100% { visibility: visible; }
+            }
+        </style>
 
   </head>
 
   <body>
-  <p>Drag link to bookmarks</p>
 
-  <a href="javascript:(function(){
+  <main>
+  <h1>Threats of online violence - is it a real problem?</h2>
+
+  <!-- text appear  -->
+  <h3 id="text"><noscript>Placeholder</noscript></h3>
+  <script src="https://cdn.rawgit.com/Zhouzi/TheaterJS/gh-pages/build/theater.min.js"></script>
+  <script type="text/javascript">
+      var theater = new TheaterJS();
+      theater.describe("text", {speed: .9, accuracy: .9}, "#text");
+      theater.write("text:Shit. Just got a death threat on Twitter, with my home address posted...", 600);
+  </script>
+  <br>
+  <br>
+  <!-- button -->
+
+
+
+
+  <br>
+  <div>
+  <p class = instruction>Drag link to bookmarks:</p>
+  <br>
+
+  <a class = bookmarklet href="javascript:(function(){
   var s = document.createElement('script');
   s.type = 'text/javascript';
   s.src = 'https://dl.dropboxusercontent.com/u/265171930/liz-bookmarklet.js';
@@ -17,10 +125,20 @@
   })();">
   Neutralize the Hate
   </a>
+</div>
 
-
-
+  </main>
   </body>
+
+  <footer>
+  Made with love in SF,
+  thanks to GA FEWD-34
+  <br>
+  Disclaimer - I am a firm believer in freedom of speech.
+  <br>
+  But threats of physical or sexual violence should not be tolerated online, or protected by the First Amendment.
+  </footer>
+
 </html>
 
 <!-- s.src = 'liz-bookmarklet.js'; -->
